@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install tailwindcss && tailwindcss -i ./css/style.css -o ./css/output.css --minify"
+    "build": "npm install tailwindcss && tailwindcss -i ./css/style.css -o ./css/output.css --minify",
+    "dev": "tailwindcss -i ./css/style.css -o ./css/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
