@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install tailwindcss && tailwindcss -i ./css/style.css -o ./css/output.css --minify",
-    "dev": "tailwindcss -i ./css/style.css -o ./css/output.css --watch"
+    "build": "npm install tailwindcss && tailwindcss -i ./css/style.css -o ./css/output.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.5",
     "tailwindcss": "^4.1.10"
   },
