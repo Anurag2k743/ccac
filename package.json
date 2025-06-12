@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install tailwindcss && tailwindcss -i ./css/style.css -o ./css/output.css --minify"
+    "build": "tailwindcss -i ./css/style.css -o ./css/output.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
@@ -15,7 +15,7 @@
     "swiper": "^11.2.8"
   },
   "engines": {
-    "node": "18.x",
+    "node": ">=18.x",
     "npm": "9.x"
   }
 }
