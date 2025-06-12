@@ -1,6 +1,14 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
+
+
+/* .bg-blue{
+    background-color: #246788;
+}
+.bg-yellow{
+    background:#EE9B24;
+} */
 
 * {
     font-family: 'Poppins';
@@ -13,51 +21,157 @@
     padding: 0px 10px;
 }
 
-/* :root { */
-    /* --color-primary: #3b82f6; */
-    /* Tailwind blue-500 */
-    /* --color-secondary: #6b7280; */
-    /* Tailwind gray-500 */
-/* } */
-
-/* .primary {
-    background-color: var(--color-primary);
-    color: white;
-    @apply font-bold py-2 px-4 rounded;
-} */
-
-
-/* :root { */
-      /* --color-primary: #246788;
-      --color-secondary: #EE9B24;
-      --color-black: #000000;
-      --color-white: #FFFFFF;
-      --color-gray: #4F4F4F; */
-/* } */
-/* 
-
 h1 {
     font-size: 64px;
-} */
+    font-weight: 700;
+    line-height: 74px;
+}
 
 h2 {
-    font-size: 45px;
+    font-size: 43px;
     font-weight: 700;
-    line-height: 100%;
-    /* color: #000000; */
-    /* padding: ; */
+    line-height: 53px;
 }
 
 h3 {
-    /* font-size: 26px; */
-    /* font-weight: 700; */
+    font-family: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
 }
 
 p {
-    /* font-size: 18px; */
-    /* font-weight: 500; */
-    /* line-height: 100%; */
-    /* color: #000000; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+#spanh1 {
+    display: flex;
+    justify-content: center;
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 100%;
+    text-align: center;
+    text-align: start;
+    max-width: 640px;
+    width: 100%;
+}
+
+:root {
+    --color-black: #000000;
+    --color-primary: #EE9B24;
+    --color-white: #ffffff;
+    --color-gray: #f4f4f4;
+    --color-darkGray: #4F4F4F;
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.whiteColor {
+    color: var(--color-white);
+}
+
+.darkGray{
+    color: var(--color-darkGray);
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    #spanh1 {
+        display: block;
+        font-size: 48px;
+        font-weight: 600;
+        color: #000000;
+        line-height: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    h1 {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-family: 16px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    #spanh1 {
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        color: #000000;
+        line-height: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .gradient {
@@ -103,6 +217,25 @@ p {
     transition: background-color 0.3s ease;
 }
 
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 3px !important;
+    }
+}
+
+
 .swiper-pagination-bullet-active {
     background: #123d5a;
     opacity: 1;
@@ -113,10 +246,40 @@ p {
     padding-bottom: 10px;
 }
 
+@media (max-width: 1024px) {
+    .swiper-pagination {
+        bottom: 80px !important;
+        padding-bottom: 10px;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .swiper-pagination {
+        bottom: 22px !important;
+        padding-bottom: 10px;
+    }
+}
+
 
 .text-overlay {
     /* position: absolute; */
     /* top: 0%;
     left: 0%; */
     z-index: 10;
+}
+
+
+
+details[open]>summary {
+    background-color: #246788 !important;
+    color: white !important;
+}
+
+.white {
+    background-color: white;
+}
+
+button {
+    cursor: pointer !important;
 }
