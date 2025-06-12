@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="container mx-auto flex justify-between items-center py-4 px-4">
                     <div>
                         <a href="index.html">
-                            <img src="./public/images/logo.png" alt="Logo" class="lg:max-w-[121.63px] lg:h-[54.09px] h-[35px] mt-2" />
+                            <img src="./images/logo.png" alt="Logo" class="lg:max-w-[121.63px] lg:h-[54.09px] h-[35px] mt-2" />
                         </a>
                     </div>
 
@@ -264,15 +264,15 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     const footerHTML = `
-        <footer class="bg-[url('./Public/Images/footerbg.png')] bg-cover bg-center">
+        <footer class="bg-[url('./Images/footerbg.png')] bg-cover bg-center">
             <section class="container mx-auto">
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-10 py-19 ">
                     <div class="space-y-5 text-white">
-                        <img src="./Public/Images/footericon.svg" alt="CCAC Logo" class=" w-[119px] h-[52px]" />
+                        <img src="./Images/footericon.svg" alt="CCAC Logo" class=" w-[119px] h-[52px]" />
                         <p class=" text-white/80 font-medium">Canadian Council On Animal Care</p>
                         <p class=" text-white/80 font-medium">Important Notices<br />Site Map</p>
                         <a href="#" class="inline-block bg-[#FFFFFF0D] p-3 rounded" title="LinkedIn">
-                            <img src="./Public/Images/in.svg" alt="LinkedIn" class="w-6 h-6" />
+                            <img src="./Images/in.svg" alt="LinkedIn" class="w-6 h-6" />
                         </a>
                     </div>
                     
@@ -296,15 +296,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="text-2xl font-bold">Get In Touch</h3>
                         <ul class="space-y-4 ">
                             <li class="flex items-start gap-3 text-white">
-                                <img src="./Public/Images/location.svg" alt="location">
+                                <img src="./Images/location.svg" alt="location">
                                 <p class="text-white/80">190 O’Connor St, Suite 800<br>Ottawa, ON, K2P 2R3</p>
                             </li>
                             <li class="flex items-center gap-3 text-white">
-                                <img src="./Public/Images/email.svg" alt="location">
+                                <img src="./Images/email.svg" alt="location">
                                 <p class="text-white/80">media@ccac.ca</p>
                             </li>
                             <li class="flex items-center gap-3 ">
-                                <img src="./Public/Images/tel.svg" alt="location">
+                                <img src="./Images/tel.svg" alt="location">
                                 <p><a href="tel:6132384031" class="text-white/80">613–238–4031</a></p>
                             </li>
                         </ul>
