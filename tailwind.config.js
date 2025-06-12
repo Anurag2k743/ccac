@@ -1,16 +1,7 @@
 module.exports = {
+  content: ["./*.{html,js}"], // Update to match your file structure
   theme: {
-    extend: {
-      colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        black: 'var(--color-black)',
-        white: 'var(--color-white)',
-        gray: 'var(--color-gray)',
-      },
-      fontSize: {
-        p: '180px',
-    },
-    },
+    extend: {},
   },
+  plugins: [],
 }
