@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="container mx-auto flex justify-between items-center py-4 px-4">
                     <div>
                         <a href="index.html">
-                            <img src="./images/logo.png" alt="Logo" class="lg:max-w-[121.63px] lg:h-[54.09px] h-[35px] mt-2" />
+                            <img src="./Images/logo.png" alt="Logo" class="lg:max-w-[121.63px] lg:h-[54.09px] h-[35px] mt-2" />
                         </a>
                     </div>
 
