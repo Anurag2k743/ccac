@@ -27,7 +27,6 @@ const headerHTML = `
       </button>
     </div>
   </div>
-
   <nav class="bg-white shadow-md">
     <div class="container mx-auto flex justify-between items-center py-4 px-4">
       <div>
@@ -69,9 +68,9 @@ const headerHTML = `
               </a>
               <!-- Third-Level -->
               <div
-                class="absolute top-0 left-full ml-1 w-40 bg-white shadow-lg rounded-md hidden group-hover/item1:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">History</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Culture</a>
+                class="absolute top-0 left-full  w-40 bg-white shadow-lg rounded-md hidden group-hover/item1:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">History</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-b-md">Culture</a>
               </div>
             </div>
 
@@ -85,9 +84,9 @@ const headerHTML = `
               </a>
               <!-- Third-Level -->
               <div
-                class="absolute top-0 left-full ml-1 w-40 bg-white shadow-lg rounded-md hidden group-hover/item2:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Vision</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Strategy</a>
+                class="absolute top-0 left-full  w-40 bg-white shadow-lg rounded-md hidden group-hover/item2:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Vision</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-b-md">Strategy</a>
               </div>
             </div>
 
@@ -102,9 +101,9 @@ const headerHTML = `
               </a>
               <!-- Third-Level -->
               <div
-                class="absolute top-0 left-full ml-1 w-40 bg-white shadow-lg rounded-md hidden group-hover/item3:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Leadership</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Advisors</a>
+                class="absolute top-0 left-full w-40 bg-white shadow-lg rounded-md hidden group-hover/item3:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Leadership</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Advisors</a>
               </div>
             </div>
 
@@ -154,9 +153,9 @@ const headerHTML = `
               </a>
               <!-- Third-Level -->
               <div
-                class="absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-md hidden group-hover/ethical:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Research Ethics</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Conflict of Interest</a>
+                class="absolute top-0 left-full  w-48 bg-white shadow-lg rounded-md hidden group-hover/ethical:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Research Ethics</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-b-md">Conflict of Interest</a>
               </div>
             </div>
 
@@ -170,9 +169,9 @@ const headerHTML = `
                 </svg>
               </a>
               <div
-                class="absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-md hidden group-hover/animal:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Care Standards</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Usage Reporting</a>
+                class="absolute top-0 left-full  w-48 bg-white shadow-lg rounded-md hidden group-hover/animal:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Care Standards</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-b-md">Usage Reporting</a>
               </div>
             </div>
 
@@ -187,15 +186,13 @@ const headerHTML = `
                 </svg>
               </a>
               <div
-                class="absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-md hidden group-hover/safety:block z-50">
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Lab Protocols</a>
-                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white">Emergency Plan</a>
+                class="absolute top-0 left-full  w-48 bg-white shadow-lg rounded-md hidden group-hover/safety:block z-50">
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-t-md">Lab Protocols</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#246788] hover:text-white rounded-b-md">Emergency Plan</a>
               </div>
             </div>
-
           </div>
         </div>
-
 
         <div class="group relative">
           <a href="#" class="flex items-center gap-1 hover:text-[#246788] py-2">
@@ -262,11 +259,13 @@ const headerHTML = `
       </div>
     </div>
 
+
+
     <div id="mobile-menu"
       class="xl:hidden fixed inset-0  sm:left-[50%] bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
       <div class="pt-4 pb-2">
         <div class="flex justify-end px-4 mb-4">
-
           <button id="close-menu" aria-label="Close menu"
             class="focus:outline-none bg-[#246788] rounded focus:ring-2 focus:ring-blue-500">
             <svg class="w-8 h-8 text-[#246788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,7 +274,6 @@ const headerHTML = `
             </svg>
           </button>
         </div>
-
 
         <div class="border-b border-gray-400">
           <button onclick="toggleSubmenu('about', this)"
@@ -287,9 +285,9 @@ const headerHTML = `
             </svg>
           </button>
 
+          
           <!-- Second-Level Menu -->
           <div id="submenu-about" class="mx-4 mt-2 px-2 space-y-1 hidden text-gray-700 pb-2">
-
             <!-- Who We Are with third-level -->
             <div>
               <button onclick="toggleSubmenu('who', this)"
@@ -332,16 +330,14 @@ const headerHTML = `
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div id="submenu-team" class="ml-4 mt-1 hidden space-y-1">
+              <div id="submenu-team" class="mt-1 hidden">
                 <a href="#"
-                  class="block py-1 px-3 text-sm hover:bg-[#EE9B24] hover:text-white transition">Leadership</a>
+                  class="block py-1 px-3 text-sm hover:bg-[#246788] hover:text-white rounded-t-md">Leadership</a>
                 <a href="#" class="block py-1 px-3 text-sm hover:bg-[#EE9B24] hover:text-white transition">Advisors</a>
               </div>
             </div>
           </div>
         </div>
-
-
 
         <div class="border-b border-gray-400">
           <button onclick="toggleSubmenu('certification', this)"
@@ -358,7 +354,6 @@ const headerHTML = `
             <a href="#" class="block py-2 px-2 hover:bg-[#EE9B24] hover:text-white transition">Renewal</a>
           </div>
         </div>
-
 
         <div class="border-b border-gray-400">
           <button onclick="toggleSubmenu('guidelines', this)"
@@ -430,7 +425,6 @@ const headerHTML = `
           </div>
         </div>
 
-
         <div class="border-b border-gray-400">
           <button onclick="toggleSubmenu('training', this)"
             class="group px-4 w-full flex items-center justify-between text-left font-semibold py-3 hover:bg-[#EE9B24] hover:text-white transition">
@@ -496,6 +490,7 @@ const headerHTML = `
         </div>
       </div>
     </div>
+
   </nav>
 </header>
 `;
@@ -558,6 +553,7 @@ const footerHTML = `
 </footer>
 `;
 
+
 // Get the placeholder elements
 const headerPlaceholder = document.getElementById('header-placeholder');
 const footerPlaceholder = document.getElementById('footer-placeholder');
@@ -599,25 +595,41 @@ mobileMenu.classList.add('translate-x-full'); // Add class for sliding out to th
 
 // Global function for toggling submenus
 window.toggleSubmenu = function (id, triggerButton) {
-const submenu = document.getElementById(`submenu-${id}`);
-if (submenu) {
-submenu.classList.toggle('hidden');
-// Toggle 'active' class on the button itself to rotate the SVG icon
-triggerButton.classList.toggle('active');
-}
+  const submenu = document.getElementById(`submenu-${id}`);
+  if (submenu) {
+    // Get the parent container of the submenu buttons (assumed to be the parent of the triggerButton)
+    const parent = triggerButton.parentElement.parentElement;
+
+    // Find all submenu divs inside the parent container
+    const siblingSubmenus = parent.querySelectorAll('div[id^="submenu-"]');
+
+    // Find all buttons inside the parent container that toggle submenus
+    const siblingButtons = parent.querySelectorAll('button');
+
+    siblingSubmenus.forEach((siblingSubmenu) => {
+      if (siblingSubmenu !== submenu) {
+        siblingSubmenu.classList.add('hidden');
+      }
+    });
+
+    siblingButtons.forEach((btn) => {
+      if (btn !== triggerButton) {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Toggle the clicked submenu and button active class
+    submenu.classList.toggle('hidden');
+    triggerButton.classList.toggle('active');
+  }
 };
 });
 
 
-function toggleSubmenu(id, button) {
-const submenu = document.getElementById(`submenu-${id}`);
-const isOpen = !submenu.classList.contains('hidden');
 
-submenu.classList.toggle('hidden');
 
-if (isOpen) {
-button.classList.remove('active');
-} else {
-button.classList.add('active');
-}
-}
+
+
+
+
+
